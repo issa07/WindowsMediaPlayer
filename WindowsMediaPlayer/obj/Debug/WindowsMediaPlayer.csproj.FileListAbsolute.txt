@@ -1,0 +1,15 @@
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\bin\Debug\WindowsMediaPlayer.exe.config
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\bin\Debug\WindowsMediaPlayer.exe
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\bin\Debug\WindowsMediaPlayer.pdb
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\bin\Debug\Interop.WMPLib.dll
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.csproj.AssemblyReference.cache
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\Interop.WMPLib.dll
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.csproj.ResolveComReference.cache
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.Form1.resources
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.Properties.Resources.resources
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.csproj.GenerateResource.cache
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.csproj.CoreCompileInputs.cache
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.exe
+C:\Users\bigba\source\repos\WindowsMediaPlayer\WindowsMediaPlayer\obj\Debug\WindowsMediaPlayer.pdb
