@@ -91,12 +91,8 @@ namespace WindowsMediaPlayer
         // Pour selection une musique parmi la liste (Playlist)
         private void track_list_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             axWindowsMediaPlayer1.URL = paths[track_list.SelectedIndex];
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-
-
-            //bindingSource1.Filter = "'%" + textBox2.Text + "%'";           
+            axWindowsMediaPlayer1.Ctlcontrols.play();          
         }
 
         // Bouton pour à la musique précendente
@@ -121,16 +117,6 @@ namespace WindowsMediaPlayer
         private void radioBtn_par_nom(object sender, EventArgs e)
         {
             textBox2.Enabled = true;
-           /* //track_list.Items.Clear();
-            for (int i = track_list.Items.Count - 1; i >= 0; i--)
-            {
-                if (track_list.Items[i].ToString().ToLower().Contains(textBox2.Text.ToLower()))
-                {
-                    track_list.SetSelected(i, true);
-
-                }
-                
-            }*/
         }
 
         // Récupérer la valeur saisi de textBox2 puis filtrer
@@ -152,10 +138,32 @@ namespace WindowsMediaPlayer
         // Filrer par l'ordre alphabétique
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            // 
+            // Codes...
+            //
         }
 
-    
+        // Navigation vers une nouvelle page pour consulter les playlist
+        private void btn_create_playlist_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form2());
+        }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+
+        }
 
     }
 }
