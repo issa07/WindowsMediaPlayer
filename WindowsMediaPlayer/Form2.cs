@@ -21,5 +21,18 @@ namespace WindowsMediaPlayer
         {
             this.Close();
         }
+
+        // Champ pour attribuer un nom à la playlist
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // Bouton add
+        private void add_playlist_Click(object sender, EventArgs e)
+        {
+            list_playlist.Items.Add(playlistName.Text);
+            // list_playlist.Text = playlistName.Text;
+        }
     }
 }

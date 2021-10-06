@@ -143,7 +143,7 @@ namespace WindowsMediaPlayer
             //
         }
 
-        // Navigation vers une nouvelle page pour consulter les playlist
+        // Navigation vers une nouvelle page (avec les panels) pour consulter les playlist
         private void btn_create_playlist_Click(object sender, EventArgs e)
         {
             openChildForm(new Form2());
@@ -166,5 +166,6 @@ namespace WindowsMediaPlayer
         }
 
     }
+
 }
 

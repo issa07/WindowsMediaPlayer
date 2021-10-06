@@ -31,8 +31,8 @@ namespace WindowsMediaPlayer
         {
             this.quitter = new System.Windows.Forms.Button();
             this.add_playlist = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.playlistName = new System.Windows.Forms.TextBox();
+            this.list_playlist = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // quitter
@@ -55,32 +55,34 @@ namespace WindowsMediaPlayer
             this.add_playlist.TabIndex = 1;
             this.add_playlist.Text = "+";
             this.add_playlist.UseVisualStyleBackColor = true;
+            this.add_playlist.Click += new System.EventHandler(this.add_playlist_Click);
             // 
-            // textBox1
+            // playlistName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(177, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(246, 36);
-            this.textBox1.TabIndex = 2;
+            this.playlistName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playlistName.Location = new System.Drawing.Point(177, 12);
+            this.playlistName.Name = "playlistName";
+            this.playlistName.Size = new System.Drawing.Size(246, 36);
+            this.playlistName.TabIndex = 2;
+            this.playlistName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // listBox1
+            // list_playlist
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 24;
-            this.listBox1.Location = new System.Drawing.Point(12, 88);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(505, 316);
-            this.listBox1.TabIndex = 3;
+            this.list_playlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.list_playlist.FormattingEnabled = true;
+            this.list_playlist.ItemHeight = 24;
+            this.list_playlist.Location = new System.Drawing.Point(12, 88);
+            this.list_playlist.Name = "list_playlist";
+            this.list_playlist.Size = new System.Drawing.Size(505, 76);
+            this.list_playlist.TabIndex = 3;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 422);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(510, 166);
+            this.Controls.Add(this.list_playlist);
+            this.Controls.Add(this.playlistName);
             this.Controls.Add(this.add_playlist);
             this.Controls.Add(this.quitter);
             this.Name = "Form2";
@@ -94,7 +96,7 @@ namespace WindowsMediaPlayer
 
         private System.Windows.Forms.Button quitter;
         private System.Windows.Forms.Button add_playlist;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox playlistName;
+        private System.Windows.Forms.ListBox list_playlist;
     }
 }

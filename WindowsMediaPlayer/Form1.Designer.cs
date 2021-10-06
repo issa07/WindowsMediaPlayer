@@ -57,7 +57,6 @@ namespace WindowsMediaPlayer
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
-            this.panelChildForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +194,7 @@ namespace WindowsMediaPlayer
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(889, 491);
+            this.label2.Location = new System.Drawing.Point(889, 504);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 20);
             this.label2.TabIndex = 15;
@@ -209,9 +208,9 @@ namespace WindowsMediaPlayer
             this.track_list.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.track_list.FormattingEnabled = true;
             this.track_list.ItemHeight = 20;
-            this.track_list.Location = new System.Drawing.Point(120, 117);
+            this.track_list.Location = new System.Drawing.Point(426, 64);
             this.track_list.Name = "track_list";
-            this.track_list.Size = new System.Drawing.Size(262, 244);
+            this.track_list.Size = new System.Drawing.Size(262, 224);
             this.track_list.TabIndex = 16;
             this.track_list.SelectedIndexChanged += new System.EventHandler(this.track_list_SelectedIndexChanged);
             // 
@@ -284,19 +283,18 @@ namespace WindowsMediaPlayer
             // panelChildForm
             // 
             this.panelChildForm.BackColor = System.Drawing.Color.DimGray;
-            this.panelChildForm.Controls.Add(this.pictureBox1);
-            this.panelChildForm.Location = new System.Drawing.Point(426, 64);
+            this.panelChildForm.Location = new System.Drawing.Point(426, 289);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(526, 423);
+            this.panelChildForm.Size = new System.Drawing.Size(526, 205);
             this.panelChildForm.TabIndex = 25;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::WindowsMediaPlayer.Properties.Resources.music;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 189);
+            this.pictureBox1.Location = new System.Drawing.Point(685, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(529, 234);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 223);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -306,14 +304,15 @@ namespace WindowsMediaPlayer
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 635);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.track_list);
             this.Controls.Add(this.btn_create_playlist);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioBtn_nom);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
-            this.Controls.Add(this.track_list);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LBLCOUNT);
             this.Controls.Add(this.textBox1);
@@ -330,7 +329,6 @@ namespace WindowsMediaPlayer
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
-            this.panelChildForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
